@@ -1,0 +1,6 @@
+{
+    "require": {
+        "paypal/rest-api-sdk-php": "*",
+        "mailin-api/mailin-api-php": "^1.0"
+    }
+}

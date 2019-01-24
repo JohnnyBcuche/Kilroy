@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  width: 100%;
+  min-height: 100%;
+}
+body{
+  width: 100%;
+  height: auto;
+  background-color: #F8F8FA;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Login page */
+
+#login-page {
+  width: 350px;
+  padding: 8% 0 8% 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 350px;
+  margin: 0 auto 0 auto;
+  padding: 12%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.form input {
+  background: #fff;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.form label{
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 15px;
+  color: #118eee;
+}
+.form select{
+  width: 100%;
+  border: 0;
+  margin: 8px 0 15px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.form button {
+  text-transform: uppercase;
+  background: #4387BC;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #7cabd0;
+}
+.form .message {
+  margin: 15px 0 0;
+  font-size: 16px;
+}
+.form .message a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+.form .message a:hover{
+  color: #666666;
+}
+
+/* Password strength */
+
+#pwd_strength_wrap {
+    font-size: 12px;
+    display: none;
+    padding: 5px;
+    width: 65%;
+    margin: -15px 0 5px 0;
+    height: auto;
+    box-sizing: border-box;
+}
+#passwordDescription {
+  color: #17314F;
+  font-size: 14px;
+  font-weight: bold;
+  /*font-family: 'OldStandardRegular';*/ 
+}
+#passwordStrength {
+    display: block;
+    height: 5px;
+    margin-bottom: 4px;
+    transition: all 0.4s ease;
+}
+.strength0 {
+    background: none; /* too short */
+    width: 0%;
+}
+.strength1 {
+    background: none repeat scroll 0 0 #FF4545;/* weak */
+    width: 25%;
+}
+.strength2 {
+    background: none repeat scroll 0 0 #FFC824;/* moderate */
+    width: 50%;
+}
+.strength3 {
+    background: none repeat scroll 0 0 #6699CC;/* good */
+    width: 75%;
+}
+ 
+.strength4 {
+    background: none repeat scroll 0 0 #008000;/* strong */
+    width: 100%;
+}
+
+/* Messages */
+
+.default{
+  color: #3333ff;
+  font-size: 22px;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+.valid{
+  color: green;
+  font-size: 22px;
+  text-align: center;
+  margin: 10px;
+}
+#invalid{
+  color: #ff0000;
+  font-size: 22px;
+  text-align: center;
+  margin: 10px;
+}
+.return-link{
+  margin-top: 10px;
+}
+.return-link label{
+  color: #17314F;
+}
+.return-link a{
+  font-size: 16px;
+  color: #17314F;
+  font-weight: bold;
+  text-decoration: none;
+}
+.return-link a:hover{
+  color: #6BA09F;
+}
+.g-recaptcha{
+  transform:scale(0.88);
+  transform-origin:0 0;
+  /*width: 100%;
+  overflow: hidden;*/
+}
+
+/*Mobile responsive*/
+
+@media only screen and (max-width:600px) {
+#login-page {
+  width: 90%;
+}
+.form {
+  padding: 10%;
+}
+.form input {
+  padding: 10px;
+  font-size: 12px;
+}
+.form select{
+  padding: 12px;
+}
+.form button {
+  padding: 12px;
+  font-size: 14px;
+}
+.form .message {
+  font-size: 12px;
+}
+.default{
+  font-size: 14px;
+}
+.valid {
+  font-size: 14px;
+}
+#invalid{
+  font-size: 14px;
+}
+.return-link a{
+  font-size: 12px;}
+}

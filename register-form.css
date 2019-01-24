@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	min-height: 100%;
+}
+body{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* My Account */
+
+.content-register{
+	background-color: #F8F8FA;
+	margin: 5% 10%;
+	border: 1px solid #ECECEE;
+	border-radius: 5px;
+	width: 80%;
+	height: 90%;
+}
+.account-details{
+	font-size: 22px;
+	line-height: 40px;
+}
+.account-details a{
+	text-decoration: none;
+	cursor: pointer;
+	padding: 12px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #094777;
+}
+.account-details img{
+	vertical-align: -8px;
+}
+.popup .popup-text {
+    visibility: hidden;
+    width: auto;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    background-color: white;
+    color: #999999;
+    text-align: center;
+    padding: 3px;
+    line-height: 12px;
+    position: absolute;
+    z-index: 1;
+}
+.popup:hover .popup-text {
+    visibility: visible;
+}
+#changeName input{
+	width: 50%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+#changeName label{
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+	color: #000;
+}
+.button-save{
+	background: #4387BC;
+	width: auto;
+	border: 0;
+	padding: 8px;
+	margin: 10px 0;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 15px;
+	cursor: pointer;
+}
+.button-save:hover,.button-save:active,.button-save:focus {
+	background: #7cabd0;
+}
+
+/* Password strength */
+
+#pwd_strength_wrap {
+    font-size: 12px;
+    display: none;
+    padding: 5px;
+    width: 65%;
+    margin: -15px 0 5px 0;
+    height: auto;
+    box-sizing: border-box;
+}
+#passwordDescription {
+	color: #1a1a1a;
+	font-size: 14px;
+	font-weight: bold; 
+}
+#passwordStrength {
+    display: block;
+    height: 5px;
+    margin-bottom: 4px;
+    transition: all 0.4s ease;
+}
+.strength0 {
+    background: none; /* too short */
+    width: 0%;
+}
+.strength1 {
+    background: none repeat scroll 0 0 #FF4545;/* weak */
+    width: 25%;
+}
+.strength2 {
+    background: none repeat scroll 0 0 #FFC824;/* moderate */
+    width: 50%;
+}
+.strength3 {
+    background: none repeat scroll 0 0 #6699CC;/* good */
+    width: 75%;
+}
+ 
+.strength4 {
+    background: none repeat scroll 0 0 #008000;/* strong */
+    width: 100%;
+}
+
+/* register form */
+
+.register-content{
+	background-color: #F8F8FA;
+	margin: 5% 20%;
+	padding: 10px;
+	border: 1px solid #ECECEE;
+	border-radius: 5px;
+	width: 60%;
+	height: 90%;
+}
+.pledges{
+	padding: 10px;
+	background-color: #F8F8FA;
+	color: #1a1a1a;
+	font-size: 16px;
+	font-weight: bold; 
+}
+.pledges h3{
+	font-size: 18px;
+	line-height: 40px;
+}
+input {
+	background: #fff;
+	width: 100%;
+	border: 1px solid #ECECEE;
+	margin: 8px 0 8px 0;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+/*
+	input for the anonymous value
+*/
+.input-icon {
+  position: relative;
+}
+
+.input-icon > i {
+  position: absolute;
+  display: block;
+  transform: translate(0, -50%);
+  top: 50%;
+  pointer-events: none;
+  width: 25px;
+  text-align: center;
+  font-style: normal;
+}
+
+.input-icon > input {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+
+
+
+.nameField{
+	color: #1a1a1a;
+	font-size: 14px;
+	font-weight: bold; 
+	margin: -2px 0 10px 0;
+}
+.passField{
+	width: 65%;
+}
+.radioCheck {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	content: "";
+	display: inline-block;;
+	font-size: 12px;
+	height: 16px;
+	width: 16px;
+	line-height: 16px;
+	margin: -2px 6px 0 0;
+	vertical-align: middle;
+}
+label{
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold; 
+	padding: 5px;
+}
+select{
+	text-align: center;
+	width: 100%;
+	border: 1px solid #ECECEE;
+	margin: 8px 0 15px 0;
+	padding: 8px;
+	box-sizing: border-box;
+	font-size: 14px; 
+}
+.g-recaptcha{
+  transform:scale(0.88);
+  transform-origin:0 0;
+  /*width: 100%;
+  overflow: hidden;*/
+}
+
+/*Mobile responsive*/
+
+@media only screen and (max-width:600px) {
+.account-details{
+	font-size: 16px;
+	line-height: 30px;
+}
+.account-details a{
+	font-size: 12px;
+}
+.account-details img{
+	width: 24px;
+}
+.popup .popup-text {
+    font-size: 10px;
+    padding: 1.5px;
+    line-height: 10px;
+}
+#changeName input{
+	width: 100%;
+}
+.register-content{
+	margin: 5% 10%;
+	padding: 10px;
+	width: 80%;
+	height: 90%;
+}
+}
